@@ -684,6 +684,7 @@ void main()
     fZ = float(vPosition.z << zshift) / 16777216.0;
     fpos.w = float(vPosition.w) / 65536.0f;
     fpos.xy *= fpos.w;
+    fpos.z = 0;
 
     fColor = vec4(vColor) / vec4(255.0,255.0,255.0,31.0);
     fTexcoord = vec2(vTexcoord) / 16.0;
